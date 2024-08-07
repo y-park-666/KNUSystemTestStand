@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Aug  6 15:11:50 2024
-# Process ID: 82058
+# Start of session at: Wed Aug  7 14:28:26 2024
+# Process ID: 291829
 # Current directory: /home/knutimingdaq01/Desktop/KNUSystemTestStand/etl_test_fw-v3.2.0
 # Command line: vivado -mode batch -source program.tcl -notrace -tclargs
 # Log file: /home/knutimingdaq01/Desktop/KNUSystemTestStand/etl_test_fw-v3.2.0/vivado.log
@@ -13,12 +13,12 @@
 # Platform          :Ubuntu
 # Operating System  :Ubuntu 24.04 LTS
 # Processor Detail  :Intel(R) Core(TM) i9-10850K CPU @ 3.60GHz
-# CPU Frequency     :4800.339 MHz
+# CPU Frequency     :4898.254 MHz
 # CPU Physical cores:10
 # CPU Logical cores :20
 # Host memory       :67341 MB
 # Swap memory       :8589 MB
 # Total Virtual     :75931 MB
-# Available Virtual :69980 MB
+# Available Virtual :68221 MB
 #-----------------------------------------------------------
 source program.tcl -notrace
