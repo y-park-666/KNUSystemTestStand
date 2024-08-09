@@ -25,17 +25,17 @@ Tamalero SW (module_test_sw)
 
 사용 방법 (개발중)
 -------------
-클론 및 환경설정
+### 클론 및 환경설정
 ```
 git clone https://github.com/resisov/KNUSystemTestStand
 cd KNUSystemTestStand
 source setup.sh
 ```
-오실로스코프 통신 테스트
+### 오실로스코프 통신 테스트
 ```
 python oscilloscope_control_v0_1.py
 ```
-Readout board turn on
+### Readout board turn on
 ```
 ipython3 test_tamalero.py -- --kcu 192.168.0.10 --verbose --configuration modulev0b --power_up
 ```
