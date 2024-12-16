@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Nov  4 14:38:07 2024
+# Process ID: 4137714
+# Current directory: /home/knutimingdaq01/Desktop/KNUSystemTestStand/etl_test_fw-v2.1.11
+# Command line: vivado -mode batch -source program.tcl -notrace -tclargs
+# Log file: /home/knutimingdaq01/Desktop/KNUSystemTestStand/etl_test_fw-v2.1.11/vivado.log
+# Journal file: /home/knutimingdaq01/Desktop/KNUSystemTestStand/etl_test_fw-v2.1.11/vivado.jou
+# Running On        :daq-ubuntu
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.1 LTS
+# Processor Detail  :Intel(R) Core(TM) i9-10850K CPU @ 3.60GHz
+# CPU Frequency     :4865.766 MHz
+# CPU Physical cores:10
+# CPU Logical cores :20
+# Host memory       :67341 MB
+# Swap memory       :8589 MB
+# Total Virtual     :75931 MB
+# Available Virtual :69958 MB
+#-----------------------------------------------------------
+source program.tcl -notrace
+Device=xcku040_0
+Target localhost:3121/xilinx_tcf/Digilent/210308B43554 xcku040_0 found, press y key to continue.
+ > Programming localhost:3121/xilinx_tcf/Digilent/210308B43554
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308B43554
+do you want to program the Flash? y/n
+ > Programming FPGA
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 6 ILA core(s).
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1543.539 ; gain = 9.004 ; free physical = 39194 ; free virtual = 66189
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210308B43554
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  4 14:38:24 2024...

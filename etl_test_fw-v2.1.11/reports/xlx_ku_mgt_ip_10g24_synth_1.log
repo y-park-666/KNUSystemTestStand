@@ -1,0 +1,315 @@
+
+*** Running vivado
+    with args -log xlx_ku_mgt_ip_10g24.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source xlx_ku_mgt_ip_10g24.tcl
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source xlx_ku_mgt_ip_10g24.tcl -notrace
+Command: synth_design -top xlx_ku_mgt_ip_10g24 -part xcku040-ffva1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-1540] The version limit for your license is '2022.03' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1700714
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2472.699 ; gain = 0.000 ; free physical = 32794 ; free virtual = 81091
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xlx_ku_mgt_ip_10g24' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24.v:62]
+INFO: [Synth 8-6157] synthesizing module 'xlx_ku_mgt_ip_10g24_gtwizard_top' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24_gtwizard_top.v:175]
+INFO: [Synth 8-6157] synthesizing module 'xlx_ku_mgt_ip_10g24_gtwizard_gthe3' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24_gtwizard_gthe3.v:143]
+INFO: [Synth 8-6157] synthesizing module 'xlx_ku_mgt_ip_10g24_gthe3_channel_wrapper' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24_gthe3_channel_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_10_gthe3_channel' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/gtwizard_ultrascale_v1_7_gthe3_channel.v:55]
+INFO: [Synth 8-6157] synthesizing module 'GTHE3_CHANNEL' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:29765]
+INFO: [Synth 8-6155] done synthesizing module 'GTHE3_CHANNEL' (1#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:29765]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_10_gthe3_channel' (2#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/gtwizard_ultrascale_v1_7_gthe3_channel.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'xlx_ku_mgt_ip_10g24_gthe3_channel_wrapper' (3#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24_gthe3_channel_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_10_gtwiz_buffbypass_rx' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_gtwiz_buffbypass_rx.v:55]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_10_reset_inv_synchronizer' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_10_reset_inv_synchronizer' (4#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:55]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_10_bit_synchronizer' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_10_bit_synchronizer' (5#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_10_gtwiz_buffbypass_rx' (6#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_gtwiz_buffbypass_rx.v:55]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_10_gtwiz_reset' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:55]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_10_reset_synchronizer' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_10_reset_synchronizer' (7#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:55]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_10_gtwiz_reset' (8#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:55]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_10_gtwiz_userdata_tx' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_tx.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_10_gtwiz_userdata_tx' (9#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_tx.v:55]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_10_gtwiz_userdata_rx' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_rx.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_10_gtwiz_userdata_rx' (10#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_rx.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'xlx_ku_mgt_ip_10g24_gtwizard_gthe3' (11#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24_gtwizard_gthe3.v:143]
+INFO: [Synth 8-6155] done synthesizing module 'xlx_ku_mgt_ip_10g24_gtwizard_top' (12#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24_gtwizard_top.v:175]
+INFO: [Synth 8-6155] done synthesizing module 'xlx_ku_mgt_ip_10g24' (13#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24.v:62]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2505.699 ; gain = 33.000 ; free physical = 31719 ; free virtual = 80019
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2520.543 ; gain = 47.844 ; free physical = 32536 ; free virtual = 80836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2520.543 ; gain = 47.844 ; free physical = 32536 ; free virtual = 80836
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2532.449 ; gain = 0.000 ; free physical = 33407 ; free virtual = 81707
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/xlx_ku_mgt_ip_10g24/synth/xlx_ku_mgt_ip_10g24.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xlx_ku_mgt_ip_10g24_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xlx_ku_mgt_ip_10g24_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/xlx_ku_mgt_ip_10g24_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/xlx_ku_mgt_ip_10g24_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2687.230 ; gain = 0.000 ; free physical = 33301 ; free virtual = 81601
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2687.230 ; gain = 0.000 ; free physical = 33300 ; free virtual = 81600
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2687.230 ; gain = 214.531 ; free physical = 33309 ; free virtual = 81613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2687.230 ; gain = 214.531 ; free physical = 33311 ; free virtual = 81615
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/xlx_ku_mgt_ip_10g24_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2687.230 ; gain = 214.531 ; free physical = 33307 ; free virtual = 81615
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_gtwiz_buffbypass_rx_main.gen_auto_mode.sm_buffbypass_rx_reg' in module 'gtwizard_ultrascale_v1_7_10_gtwiz_buffbypass_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_all_reg' in module 'gtwizard_ultrascale_v1_7_10_gtwiz_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_tx_reg' in module 'gtwizard_ultrascale_v1_7_10_gtwiz_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_rx_reg' in module 'gtwizard_ultrascale_v1_7_10_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+ST_BUFFBYPASS_RX_DEASSERT_RXDLYSRESET |                               01 |                               01
+ST_BUFFBYPASS_RX_WAIT_RXSYNCDONE |                               10 |                               10
+   ST_BUFFBYPASS_RX_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_gtwiz_buffbypass_rx_main.gen_auto_mode.sm_buffbypass_rx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_10_gtwiz_buffbypass_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      ST_RESET_TX_BRANCH |                              000 |                              000
+         ST_RESET_TX_PLL |                              001 |                              001
+    ST_RESET_TX_DATAPATH |                              010 |                              010
+   ST_RESET_TX_WAIT_LOCK |                              011 |                              011
+ST_RESET_TX_WAIT_USERRDY |                              100 |                              100
+ST_RESET_TX_WAIT_RESETDONE |                              101 |                              101
+        ST_RESET_TX_IDLE |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_tx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_10_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      ST_RESET_RX_BRANCH |                              000 |                              000
+         ST_RESET_RX_PLL |                              001 |                              001
+    ST_RESET_RX_DATAPATH |                              010 |                              010
+   ST_RESET_RX_WAIT_LOCK |                              011 |                              011
+    ST_RESET_RX_WAIT_CDR |                              100 |                              100
+ST_RESET_RX_WAIT_USERRDY |                              101 |                              101
+ST_RESET_RX_WAIT_RESETDONE |                              110 |                              110
+        ST_RESET_RX_IDLE |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_rx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_10_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+     ST_RESET_ALL_BRANCH |                              000 |                              001
+     ST_RESET_ALL_TX_PLL |                              001 |                              010
+ST_RESET_ALL_TX_PLL_WAIT |                              010 |                              011
+      ST_RESET_ALL_RX_DP |                              011 |                              100
+     ST_RESET_ALL_RX_PLL |                              100 |                              101
+    ST_RESET_ALL_RX_WAIT |                              101 |                              110
+                  iSTATE |                              110 |                              111
+       ST_RESET_ALL_INIT |                              111 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_all_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_10_gtwiz_reset'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2687.230 ; gain = 214.531 ; free physical = 33228 ; free virtual = 81534
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 154   
++---Muxes : 
+	   7 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 7     
+	   8 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 13    
+	   8 Input    1 Bit        Muxes := 26    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2687.230 ; gain = 214.531 ; free physical = 33128 ; free virtual = 81444
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2704.059 ; gain = 231.359 ; free physical = 32505 ; free virtual = 80820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2737.082 ; gain = 264.383 ; free physical = 32484 ; free virtual = 80800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2737.082 ; gain = 264.383 ; free physical = 32478 ; free virtual = 80794
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2741.051 ; gain = 268.352 ; free physical = 32589 ; free virtual = 80901
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2741.051 ; gain = 268.352 ; free physical = 32589 ; free virtual = 80900
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2741.051 ; gain = 268.352 ; free physical = 32586 ; free virtual = 80898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2741.051 ; gain = 268.352 ; free physical = 32586 ; free virtual = 80898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2741.051 ; gain = 268.352 ; free physical = 32586 ; free virtual = 80897
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2741.051 ; gain = 268.352 ; free physical = 32586 ; free virtual = 80897
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |CARRY8        |     4|
+|2     |GTHE3_CHANNEL |     1|
+|3     |LUT1          |    10|
+|4     |LUT2          |    20|
+|5     |LUT3          |    22|
+|6     |LUT4          |    15|
+|7     |LUT5          |    18|
+|8     |LUT6          |    46|
+|9     |FDCE          |    15|
+|10    |FDPE          |    40|
+|11    |FDRE          |   159|
+|12    |FDSE          |     6|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2741.051 ; gain = 268.352 ; free physical = 32585 ; free virtual = 80897
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2741.051 ; gain = 101.664 ; free physical = 32608 ; free virtual = 80920
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2741.059 ; gain = 268.352 ; free physical = 32608 ; free virtual = 80920
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2741.059 ; gain = 0.000 ; free physical = 32668 ; free virtual = 80980
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 4 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2807.754 ; gain = 0.000 ; free physical = 32588 ; free virtual = 80901
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: bbd788f4
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 2807.754 ; gain = 343.059 ; free physical = 32727 ; free virtual = 81039
+INFO: [Common 17-1381] The checkpoint '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/xlx_ku_mgt_ip_10g24_synth_1/xlx_ku_mgt_ip_10g24.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP xlx_ku_mgt_ip_10g24, cache-ID = db3c8087df34add0
+INFO: [Coretcl 2-1174] Renamed 28 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/xlx_ku_mgt_ip_10g24_synth_1/xlx_ku_mgt_ip_10g24.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file xlx_ku_mgt_ip_10g24_utilization_synth.rpt -pb xlx_ku_mgt_ip_10g24_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 20 15:28:37 2023...

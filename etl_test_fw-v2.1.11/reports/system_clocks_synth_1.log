@@ -1,0 +1,239 @@
+
+*** Running vivado
+    with args -log system_clocks.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_clocks.tcl
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source system_clocks.tcl -notrace
+Command: synth_design -top system_clocks -part xcku040-ffva1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-1540] The version limit for your license is '2022.03' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1700678
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2472.637 ; gain = 0.000 ; free physical = 33157 ; free virtual = 81453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_clocks' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks.v:71]
+INFO: [Synth 8-6157] synthesizing module 'system_clocks_clk_wiz' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'MMCME3_ADV' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:60154]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 3.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 3.125000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 24.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: AUTO - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME3_ADV' (1#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:60154]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'system_clocks_clk_wiz' (3#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'system_clocks' (4#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks.v:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2488.637 ; gain = 16.000 ; free physical = 30700 ; free virtual = 78999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2506.449 ; gain = 33.812 ; free physical = 30208 ; free virtual = 78507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2506.449 ; gain = 33.812 ; free physical = 30208 ; free virtual = 78507
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2517.355 ; gain = 0.000 ; free physical = 30110 ; free virtual = 78409
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks_board.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks_board.xdc] for cell 'inst'
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks.xdc] for cell 'inst'
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/system_clocks_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/system_clocks_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks_late.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_clocks/system_clocks_late.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2607.137 ; gain = 0.000 ; free physical = 31718 ; free virtual = 80019
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+
+INFO: [Timing 38-2] Deriving generated clocks
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2607.137 ; gain = 0.000 ; free physical = 32167 ; free virtual = 80467
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2607.137 ; gain = 134.500 ; free physical = 33297 ; free virtual = 81597
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2607.137 ; gain = 134.500 ; free physical = 33297 ; free virtual = 81597
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/system_clocks_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2607.137 ; gain = 134.500 ; free physical = 33297 ; free virtual = 81597
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2607.137 ; gain = 134.500 ; free physical = 33364 ; free virtual = 81665
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2607.137 ; gain = 134.500 ; free physical = 33273 ; free virtual = 81577
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2667.512 ; gain = 194.875 ; free physical = 32748 ; free virtual = 81064
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2667.512 ; gain = 194.875 ; free physical = 32749 ; free virtual = 81064
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2686.543 ; gain = 213.906 ; free physical = 32741 ; free virtual = 81056
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2692.480 ; gain = 219.844 ; free physical = 32465 ; free virtual = 80781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2692.480 ; gain = 219.844 ; free physical = 32465 ; free virtual = 80781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2692.480 ; gain = 219.844 ; free physical = 32464 ; free virtual = 80780
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2692.480 ; gain = 219.844 ; free physical = 32464 ; free virtual = 80780
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2692.480 ; gain = 219.844 ; free physical = 32464 ; free virtual = 80780
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2692.480 ; gain = 219.844 ; free physical = 32464 ; free virtual = 80780
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |MMCME3_ADV |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2692.480 ; gain = 219.844 ; free physical = 32464 ; free virtual = 80780
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2692.480 ; gain = 119.156 ; free physical = 32476 ; free virtual = 80791
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2692.488 ; gain = 219.844 ; free physical = 32475 ; free virtual = 80791
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2692.488 ; gain = 0.000 ; free physical = 32469 ; free virtual = 80785
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2729.168 ; gain = 0.000 ; free physical = 32526 ; free virtual = 80842
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+
+Synth Design complete, checksum: 90f1528c
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2729.168 ; gain = 264.535 ; free physical = 32657 ; free virtual = 80972
+INFO: [Common 17-1381] The checkpoint '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/system_clocks_synth_1/system_clocks.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_clocks, cache-ID = a0a4f5be85226a2a
+INFO: [Common 17-1381] The checkpoint '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/system_clocks_synth_1/system_clocks.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_clocks_utilization_synth.rpt -pb system_clocks_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 20 15:28:35 2023...

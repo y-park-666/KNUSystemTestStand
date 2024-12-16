@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Sep 12 13:04:59 2024
+# Process ID: 3585562
+# Current directory: /home/knutimingdaq01/Desktop/KNUSystemTestStand
+# Command line: vivado
+# Log file: /home/knutimingdaq01/Desktop/KNUSystemTestStand/vivado.log
+# Journal file: /home/knutimingdaq01/Desktop/KNUSystemTestStand/vivado.jou
+# Running On        :daq-ubuntu
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.1 LTS
+# Processor Detail  :Intel(R) Core(TM) i9-10850K CPU @ 3.60GHz
+# CPU Frequency     :4898.877 MHz
+# CPU Physical cores:10
+# CPU Logical cores :20
+# Host memory       :67341 MB
+# Swap memory       :8589 MB
+# Total Virtual     :75931 MB
+# Available Virtual :68991 MB
+#-----------------------------------------------------------
+start_gui
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcku040_0] 0]
+set_property PROBES.FILE {/home/knutimingdaq01/Desktop/KNUSystemTestStand/etl_test_fw-v3.2.0/etl_test_fw-v3.2.0.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {/home/knutimingdaq01/Desktop/KNUSystemTestStand/etl_test_fw-v3.2.0/etl_test_fw-v3.2.0.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {/home/knutimingdaq01/Desktop/KNUSystemTestStand/etl_test_fw-v3.2.0/etl_test_fw-v3.2.0.bin} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"rbgen[0].readout_board_inst/debug.ila_lpgbt_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"rbgen[0].readout_board_inst/sc_gen.gbt_controller_wrapper_inst/sca_ila_gen.ila_sca_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"rbgen[1].readout_board_inst/sc_gen.gbt_controller_wrapper_inst/sca_ila_gen.ila_sca_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"rbgen[2].readout_board_inst/sc_gen.gbt_controller_wrapper_inst/sca_ila_gen.ila_sca_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"rbgen[3].readout_board_inst/sc_gen.gbt_controller_wrapper_inst/sca_ila_gen.ila_sca_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"rbgen[4].readout_board_inst/sc_gen.gbt_controller_wrapper_inst/sca_ila_gen.ila_sca_inst"}]]
+save_wave_config {/home/knutimingdaq01/Desktop/KNUSystemTestStand/.Xil/Vivado-3585562-daq-ubuntu/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {/home/knutimingdaq01/Desktop/KNUSystemTestStand/.Xil/Vivado-3585562-daq-ubuntu/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {/home/knutimingdaq01/Desktop/KNUSystemTestStand/.Xil/Vivado-3585562-daq-ubuntu/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+save_wave_config {/home/knutimingdaq01/Desktop/KNUSystemTestStand/.Xil/Vivado-3585562-daq-ubuntu/hw_1/wave/hw_ila_data_4/hw_ila_data_4.wcfg}
+save_wave_config {/home/knutimingdaq01/Desktop/KNUSystemTestStand/.Xil/Vivado-3585562-daq-ubuntu/hw_1/wave/hw_ila_data_5/hw_ila_data_5.wcfg}
+save_wave_config {/home/knutimingdaq01/Desktop/KNUSystemTestStand/.Xil/Vivado-3585562-daq-ubuntu/hw_1/wave/hw_ila_data_6/hw_ila_data_6.wcfg}

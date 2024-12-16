@@ -1,0 +1,20 @@
+## etl_test_fw Synthesis Utilization report
+                                                                                                           
+| **Site Type**    |    **Used** |     **Fixed** |   **Prohibited** |    **Available** |    **Util%** |    
+| ---    |         ---  |        ---   |         --- |              ---  |             ---  |              
+| CLB    LUTs*     |    127632   |     0         |   0              |    242400        |    52.65     |    
+| CLB    Registers |    151117   |     0         |   0              |    484800        |    31.17     |    
+| Block  RAM       Tile |        319.5 |         0   |              0    |             600  |         53.25
+| DSPs   |         2    |        0     |         0   |              1920 |             0.10 |              
+| Bonded IOB       |    25       |     0         |   0              |    520           |    4.81      |    
+                                                                                                           
+## etl_test_fw Implementation Utilization report
+                                                                                                           
+| **Site Type**    |    **Used** |     **Fixed** |   **Prohibited** |    **Available** |    **Util%** |    
+| ---    |         ---  |        ---   |         --- |              ---  |             ---  |              
+| CLB    LUTs      |    137334   |     0         |   0              |    242400        |    56.66     |    
+| CLB    Registers |    176571   |     0         |   0              |    484800        |    36.42     |    
+| Block  RAM       Tile |        357.5 |         0   |              0    |             600  |         59.58
+| DSPs   |         2    |        0     |         0   |              1920 |             0.10 |              
+| Bonded IOB       |    31       |     31        |   0              |    520           |    5.96      |    
+                                                                                                           

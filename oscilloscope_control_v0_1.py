@@ -4,6 +4,7 @@ import time
 import numpy as np
 import uproot
 import argparse
+import awkward as ak
 
 def __version__():
     return 'v0.1'
@@ -23,7 +24,7 @@ start_time = time.time()
 resource_name = 'TCPIP::192.168.0.2::INSTR'
 horizontalwindow = 1e-8
 trigger_channel = 2
-trigger_level = -1  # V
+trigger_level = -0.25  # V
 
 class Tektronix:
     def __init__(self, resource_name):
@@ -33,7 +34,7 @@ class Tektronix:
         self.idn = self.inst.query('*IDN?')
 
     def acquisition(self, nEvents):
-        with uproot.recreate('waveforms.root') as f:
+        with uproot.recreate('waveforms_ped.root') as f:
             f.mktree("Events", {
                 "time": np.float64,
                 "ch1": np.float64,
@@ -44,15 +45,20 @@ class Tektronix:
             self.inst.write(f'ACQUIRE:STATE STOP; DATA:ENC RPB; HOR:MAIN:SCALE {horizontalwindow}; TRIG:A:LEVel:CH{trigger_channel} {trigger_level}')
             
             for i in range(nEvents):
+                if i % 10 == 0:
+                    print(f'Acquisition {i}/{nEvents}')
                 self.runtheScope()
                 data = {}
                 for ch in range(1, 5):
                     x, y = self.readChannel(ch)
                     data[f'ch{ch}'] = y
                     if ch == 1:
+                        time = x
+                        f['Events'] 
+                    if ch == 1:
                         data['time'] = x
 
-                f['Events'].extend(data)
+                f['Events'].extend(ak.Array(data))
 
     def setTrigger(self, channel, level):
         self.inst.write(f'TRIG:A:LEVel:CH{channel} {level}')

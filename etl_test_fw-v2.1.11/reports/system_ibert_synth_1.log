@@ -1,0 +1,811 @@
+
+*** Running vivado
+    with args -log system_ibert.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_ibert.tcl
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source system_ibert.tcl -notrace
+Command: synth_design -top system_ibert -part xcku040-ffva1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-1540] The version limit for your license is '2022.03' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1701275
+WARNING: [Synth 8-2254] instance name 'sl_iport_rst_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:237]
+WARNING: [Synth 8-2254] instance name 'sl_iport_en_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:244]
+WARNING: [Synth 8-2254] instance name 'sl_iport_we_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:251]
+WARNING: [Synth 8-2254] instance name 'sl_oport_rdy_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:258]
+WARNING: [Synth 8-2254] instance name 'sl_iport_rst_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:1144]
+WARNING: [Synth 8-2254] instance name 'sl_iport_en_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:1151]
+WARNING: [Synth 8-2254] instance name 'sl_iport_we_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:1158]
+WARNING: [Synth 8-2254] instance name 'sl_oport_rdy_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:1165]
+WARNING: [Synth 8-2254] instance name 'sl_iport_rst_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:1993]
+WARNING: [Synth 8-2254] instance name 'sl_iport_en_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:2000]
+WARNING: [Synth 8-2254] instance name 'sl_iport_we_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:2007]
+WARNING: [Synth 8-2254] instance name 'sl_oport_rdy_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:2014]
+WARNING: [Synth 8-2254] instance name 'sl_iport_rst_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:2841]
+WARNING: [Synth 8-2254] instance name 'sl_iport_en_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:2848]
+WARNING: [Synth 8-2254] instance name 'sl_iport_we_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:2855]
+WARNING: [Synth 8-2254] instance name 'sl_oport_rdy_sync' matches net/port name [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/hdl/in_system_ibert_v1_0_syn_rfs.v:2862]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2470.637 ; gain = 0.000 ; free physical = 32328 ; free virtual = 80651
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_ibert' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:57]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd:140]
+INFO: [Synth 8-3491] module 'FDS' declared at '/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27960' bound to instance 'POR_FF_I' of component 'FDS' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd:169]
+INFO: [Synth 8-6157] synthesizing module 'FDS' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27960]
+INFO: [Synth 8-6155] done synthesizing module 'FDS' (56#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27960]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (57#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10__parameterized1' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd:140]
+INFO: [Synth 8-3491] module 'FDS' declared at '/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27960' bound to instance 'POR_FF_I' of component 'FDS' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd:169]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10__parameterized1' (57#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_cntlr.vhd:215]
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_mux' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd:88' bound to instance 'lmb_mux_I' of component 'lmb_mux' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_cntlr.vhd:427]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd:170]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/pselect_mask.vhd:87' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr_v4_0_pselect_mask' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/pselect_mask.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr_v4_0_pselect_mask' (58#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/pselect_mask.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (59#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd:170]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (60#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_cntlr.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr__parameterized1' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_cntlr.vhd:215]
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_mux' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd:88' bound to instance 'lmb_mux_I' of component 'lmb_mux' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_cntlr.vhd:427]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr__parameterized1' (60#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_cntlr.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'iomodule' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule.vhd:286]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pselect_mask.vhd:87' bound to instance 'pselect_mask_reg' of component 'pselect_mask' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule.vhd:597]
+INFO: [Synth 8-638] synthesizing module 'iomodule_v3_0_pselect_mask' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pselect_mask.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'iomodule_v3_0_pselect_mask' (63#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pselect_mask.vhd:102]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pselect_mask.vhd:87' bound to instance 'pselect_mask_io' of component 'pselect_mask' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule.vhd:628]
+INFO: [Synth 8-638] synthesizing module 'iomodule_v3_0_pselect_mask__parameterized0' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pselect_mask.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'iomodule_v3_0_pselect_mask__parameterized0' (63#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pselect_mask.vhd:102]
+	Parameter C_FREQ bound to: 100000000 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_USE_UART_RX bound to: 0 - type: integer 
+	Parameter C_USE_UART_TX bound to: 0 - type: integer 
+	Parameter C_UART_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_UART_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_UART_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_UART_ODD_PARITY bound to: 0 - type: integer 
+	Parameter C_UART_RX_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_UART_TX_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_UART_ERROR_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_UART_PROG_BAUDRATE bound to: 0 - type: integer 
+	Parameter C_USE_FIT1 bound to: 0 - type: integer 
+	Parameter C_FIT1_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT1_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_FIT2 bound to: 0 - type: integer 
+	Parameter C_FIT2_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT2_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_FIT3 bound to: 0 - type: integer 
+	Parameter C_FIT3_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT3_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_FIT4 bound to: 0 - type: integer 
+	Parameter C_FIT4_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT4_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT1 bound to: 0 - type: integer 
+	Parameter C_PIT1_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT1_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT1_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT1_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT2 bound to: 0 - type: integer 
+	Parameter C_PIT2_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT2_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT2_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT2_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT3 bound to: 0 - type: integer 
+	Parameter C_PIT3_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT3_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT3_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT3_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT4 bound to: 0 - type: integer 
+	Parameter C_PIT4_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT4_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT4_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT4_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPO1 bound to: 0 - type: integer 
+	Parameter C_GPO1_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO1_INIT bound to: 0 - type: integer 
+	Parameter C_USE_GPO2 bound to: 0 - type: integer 
+	Parameter C_GPO2_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO2_INIT bound to: 0 - type: integer 
+	Parameter C_USE_GPO3 bound to: 0 - type: integer 
+	Parameter C_GPO3_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO3_INIT bound to: 0 - type: integer 
+	Parameter C_USE_GPO4 bound to: 0 - type: integer 
+	Parameter C_GPO4_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO4_INIT bound to: 0 - type: integer 
+	Parameter C_USE_GPI1 bound to: 0 - type: integer 
+	Parameter C_GPI1_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI1_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPI2 bound to: 0 - type: integer 
+	Parameter C_GPI2_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI2_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPI3 bound to: 0 - type: integer 
+	Parameter C_GPI3_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI3_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPI4 bound to: 0 - type: integer 
+	Parameter C_GPI4_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI4_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_INTC_USE_EXT_INTR bound to: 0 - type: integer 
+	Parameter C_INTC_INTR_SIZE bound to: 1 - type: integer 
+	Parameter C_INTC_LEVEL_EDGE bound to: 16'b0000000000000000 
+	Parameter C_INTC_POSITIVE bound to: 16'b1111111111111111 
+	Parameter C_INTC_HAS_FAST bound to: 1 - type: integer 
+	Parameter C_INTC_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_INTC_BASE_VECTORS bound to: 0 - type: integer 
+	Parameter C_INTC_ASYNC_INTR bound to: 16'b1111111111111111 
+	Parameter C_INTC_NUM_SYNC_FF bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'Iomodule_core' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:92' bound to instance 'IOModule_Core_I1' of component 'iomodule_core' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule.vhd:760]
+INFO: [Synth 8-638] synthesizing module 'Iomodule_core' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:284]
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_USE_FIT bound to: 0 - type: integer 
+	Parameter C_NO_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_INACCURACY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'FIT_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/fit_module.vhd:90' bound to instance 'FIT_I1' of component 'FIT_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:729]
+INFO: [Synth 8-638] synthesizing module 'FIT_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/fit_module.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'FIT_Module' (64#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/fit_module.vhd:112]
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_USE_FIT bound to: 0 - type: integer 
+	Parameter C_NO_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_INACCURACY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'FIT_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/fit_module.vhd:90' bound to instance 'FIT_I2' of component 'FIT_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:744]
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_USE_FIT bound to: 0 - type: integer 
+	Parameter C_NO_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_INACCURACY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'FIT_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/fit_module.vhd:90' bound to instance 'FIT_I3' of component 'FIT_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:759]
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_USE_FIT bound to: 0 - type: integer 
+	Parameter C_NO_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_INACCURACY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'FIT_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/fit_module.vhd:90' bound to instance 'FIT_I4' of component 'FIT_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:774]
+	Parameter C_USE_PIT bound to: 0 - type: integer 
+	Parameter C_PIT_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT_READABLE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'PIT_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pit_module.vhd:89' bound to instance 'PIT_I1' of component 'PIT_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:804]
+INFO: [Synth 8-638] synthesizing module 'PIT_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pit_module.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'PIT_Module' (65#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pit_module.vhd:111]
+	Parameter C_USE_PIT bound to: 0 - type: integer 
+	Parameter C_PIT_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT_READABLE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'PIT_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pit_module.vhd:89' bound to instance 'PIT_I2' of component 'PIT_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:834]
+	Parameter C_USE_PIT bound to: 0 - type: integer 
+	Parameter C_PIT_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT_READABLE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'PIT_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pit_module.vhd:89' bound to instance 'PIT_I3' of component 'PIT_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:864]
+	Parameter C_USE_PIT bound to: 0 - type: integer 
+	Parameter C_PIT_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT_READABLE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'PIT_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/pit_module.vhd:89' bound to instance 'PIT_I4' of component 'PIT_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:894]
+	Parameter C_USE_GPO bound to: 0 - type: integer 
+	Parameter C_GPO_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO_INIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPO_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpo_module.vhd:89' bound to instance 'GPO_I1' of component 'GPO_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:913]
+INFO: [Synth 8-638] synthesizing module 'GPO_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpo_module.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'GPO_Module' (66#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpo_module.vhd:103]
+	Parameter C_USE_GPO bound to: 0 - type: integer 
+	Parameter C_GPO_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO_INIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPO_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpo_module.vhd:89' bound to instance 'GPO_I2' of component 'GPO_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:925]
+	Parameter C_USE_GPO bound to: 0 - type: integer 
+	Parameter C_GPO_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO_INIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPO_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpo_module.vhd:89' bound to instance 'GPO_I3' of component 'GPO_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:937]
+	Parameter C_USE_GPO bound to: 0 - type: integer 
+	Parameter C_GPO_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO_INIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPO_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpo_module.vhd:89' bound to instance 'GPO_I4' of component 'GPO_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:949]
+	Parameter C_USE_GPI bound to: 0 - type: integer 
+	Parameter C_GPI_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI_INTERRUPT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPI_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpi_module.vhd:90' bound to instance 'GPI_I1' of component 'GPI_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:964]
+INFO: [Synth 8-638] synthesizing module 'GPI_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpi_module.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'GPI_Module' (67#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpi_module.vhd:105]
+	Parameter C_USE_GPI bound to: 0 - type: integer 
+	Parameter C_GPI_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI_INTERRUPT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPI_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpi_module.vhd:90' bound to instance 'GPI_I2' of component 'GPI_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:979]
+	Parameter C_USE_GPI bound to: 0 - type: integer 
+	Parameter C_GPI_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI_INTERRUPT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPI_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpi_module.vhd:90' bound to instance 'GPI_I3' of component 'GPI_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:994]
+	Parameter C_USE_GPI bound to: 0 - type: integer 
+	Parameter C_GPI_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI_INTERRUPT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPI_Module' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/gpi_module.vhd:90' bound to instance 'GPI_I4' of component 'GPI_Module' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:1009]
+	Parameter C_INTC_ENABLED bound to: 0 - type: integer 
+	Parameter C_INTC_LEVEL_EDGE bound to: 32'b00000000000000001111111111111111 
+	Parameter C_INTC_POSITIVE bound to: 32'b11111111111111111111111111111111 
+	Parameter C_INTC_ASYNC_INTR bound to: 32'b11111111111111110000000000000000 
+	Parameter C_INTC_HAS_FAST bound to: 1 - type: integer 
+	Parameter C_INTC_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_INTC_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_INTC_BASE_VECTORS bound to: 0 - type: integer 
+	Parameter C_USE_LUTRAM bound to: yes - type: string 
+INFO: [Synth 8-3491] module 'intr_ctrl' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:91' bound to instance 'intr_ctrl_I1' of component 'intr_ctrl' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:1050]
+INFO: [Synth 8-638] synthesizing module 'intr_ctrl' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:126]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-113] binding component instance 'fdr_i' to cell 'FDR' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:481]
+INFO: [Synth 8-256] done synthesizing module 'intr_ctrl' (68#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/intr_ctrl.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'Iomodule_core' (69#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule_core.vhd:284]
+INFO: [Synth 8-256] done synthesizing module 'iomodule' (70#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/pcores/iomodule_v3_0/hdl/vhdl/iomodule.vhd:286]
+WARNING: [Synth 8-7071] port 'gt1_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt2_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt3_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt4_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt5_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt6_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt7_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt8_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt9_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt10_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt11_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt12_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt13_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt14_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt15_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt16_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt17_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt18_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt19_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt20_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt21_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt22_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt23_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt24_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt25_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt26_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt27_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt28_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt29_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt30_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt31_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt32_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt33_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt34_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt35_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt36_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt37_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt38_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt39_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt40_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt41_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt42_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt43_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt44_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt45_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt46_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt47_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt48_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt49_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt50_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt51_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt52_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt53_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt54_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt55_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt56_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt57_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt58_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt59_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt60_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt61_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt62_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt63_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt64_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt65_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt66_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt67_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt68_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt69_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt70_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt71_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt72_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt73_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt74_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt75_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt76_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt77_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt78_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt79_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt80_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt81_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt82_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt83_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt84_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt85_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt86_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt87_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt88_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt89_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt90_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt91_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt92_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt93_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt94_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt95_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt96_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt97_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt98_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt99_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+WARNING: [Synth 8-7071] port 'gt100_drpen_o' of module 'in_system_ibert_v1_0_13_in_system_ibert' is unconnected for instance 'inst' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'inst' of module 'in_system_ibert_v1_0_13_in_system_ibert' has 1071 connections declared, but only 23 given [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:371]
+INFO: [Synth 8-6155] done synthesizing module 'system_ibert' (73#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2632.637 ; gain = 162.000 ; free physical = 32819 ; free virtual = 81143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2644.512 ; gain = 173.875 ; free physical = 32667 ; free virtual = 80992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2644.512 ; gain = 173.875 ; free physical = 32667 ; free virtual = 80992
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2644.512 ; gain = 0.000 ; free physical = 32422 ; free virtual = 80747
+INFO: [Netlist 29-17] Analyzing 440 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/system_ibert_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/system_ibert_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/sw_mcs_all.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/sw_mcs_all.xdc] for cell 'inst'
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/system_ibert/synth/system_ibert.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_ibert_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_ibert_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/system_ibert_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/system_ibert_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2799.262 ; gain = 0.000 ; free physical = 31116 ; free virtual = 79440
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 359 instances were transformed.
+  FD => FDRE: 32 instances
+  FDE => FDRE: 46 instances
+  FDR => FDRE: 33 instances
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 5 instances
+  FDS => FDSE: 5 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 81 instances
+  MULT_AND => LUT2: 3 instances
+  MUXCY_L => MUXCY: 74 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 64 instances
+  RAMB36E1 => RAMB36E2: 16 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:00.43 . Memory (MB): peak = 2802.230 ; gain = 2.969 ; free physical = 31082 ; free virtual = 79407
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 31822 ; free virtual = 80147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 31822 ; free virtual = 80147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/system_ibert_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 32048 ; free virtual = 80380
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 16 for RAM "in_system_ibert_v1_0_13_gthe3_channel_regs:/myram_reg"
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 31900 ; free virtual = 80233
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/mcs_0/iomodule_0/IOModule_Core_I1/FIT_I1' (FIT_Module) to 'inst/mcs_0/iomodule_0/IOModule_Core_I1/FIT_I2'
+INFO: [Synth 8-223] decloning instance 'inst/mcs_0/iomodule_0/IOModule_Core_I1/FIT_I1' (FIT_Module) to 'inst/mcs_0/iomodule_0/IOModule_Core_I1/FIT_I3'
+INFO: [Synth 8-223] decloning instance 'inst/mcs_0/iomodule_0/IOModule_Core_I1/FIT_I1' (FIT_Module) to 'inst/mcs_0/iomodule_0/IOModule_Core_I1/FIT_I4'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     11 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	             4096 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               51 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 13    
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 27    
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 153   
++---RAMs : 
+	              32K Bit	(2048 X 16 bit)          RAMs := 1     
++---Muxes : 
+	   5 Input   48 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input   24 Bit        Muxes := 1     
+	   4 Input   17 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 5     
+	   7 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 7     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 6     
+	   5 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 9     
+	   5 Input    1 Bit        Muxes := 5     
+	   7 Input    1 Bit        Muxes := 14    
+	   2 Input    1 Bit        Muxes := 182   
+	   3 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 2     
+	   9 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 16 for RAM "inst/\GTHE3_CH[0].u_gthe3_ch /i_regs/myram_reg"
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 32268 ; free virtual = 80629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                          | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/\GTHE3_CH[0].u_gthe3_ch /i_regs | myram_reg  | 2 K x 16(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 1      | 1               | 
++-------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 33087 ; free virtual = 81450
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 33357 ; free virtual = 81722
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                          | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/\GTHE3_CH[0].u_gthe3_ch /i_regs | myram_reg  | 2 K x 16(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 1      | 1               | 
++-------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
+-------NONE-------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/GTHE3_CH[0].u_gthe3_ch/i_regs/myram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 33332 ; free virtual = 81697
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_regs:pcsrsvdin_i[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rxlpmen_sync2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rxlpmen_sync1_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txdiffctrl_sync2_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txdiffctrl_sync2_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txdiffctrl_sync2_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txdiffctrl_sync2_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txdiffctrl_sync1_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txdiffctrl_sync1_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txdiffctrl_sync1_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txdiffctrl_sync1_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txpostcursor_sync2_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txpostcursor_sync2_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txpostcursor_sync2_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txpostcursor_sync2_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txpostcursor_sync2_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txpostcursor_sync1_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txpostcursor_sync1_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txpostcursor_sync1_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txpostcursor_sync1_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txpostcursor_sync1_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txprecursor_sync2_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txprecursor_sync2_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txprecursor_sync2_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txprecursor_sync2_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txprecursor_sync2_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txprecursor_sync1_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txprecursor_sync1_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txprecursor_sync1_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txprecursor_sync1_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin txprecursor_sync1_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[36] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[35] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[34] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[33] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[32] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 33591 ; free virtual = 81956
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 33591 ; free virtual = 81956
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 33589 ; free virtual = 81954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 33589 ; free virtual = 81954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 33595 ; free virtual = 81959
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 33592 ; free virtual = 81957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |    36|
+|2     |LUT2     |    54|
+|3     |LUT3     |    82|
+|4     |LUT4     |   210|
+|5     |LUT5     |   166|
+|6     |LUT6     |   356|
+|8     |MULT_AND |     2|
+|9     |MUXCY_L  |    71|
+|10    |MUXF7    |    40|
+|11    |RAM32X1D |    64|
+|12    |RAMB36E1 |    16|
+|13    |RAMB36E2 |     1|
+|14    |SRL16E   |    46|
+|15    |XORCY    |    49|
+|16    |FDE      |    32|
+|17    |FDR      |     1|
+|18    |FDRE     |  1053|
+|19    |FDS      |     5|
+|20    |FDSE     |    20|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 33590 ; free virtual = 81955
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 83 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2802.230 ; gain = 173.875 ; free physical = 33615 ; free virtual = 81980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2802.230 ; gain = 331.594 ; free physical = 33615 ; free virtual = 81979
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2802.230 ; gain = 0.000 ; free physical = 33745 ; free virtual = 82110
+INFO: [Netlist 29-17] Analyzing 361 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/mcs_0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2833.949 ; gain = 0.000 ; free physical = 33096 ; free virtual = 81463
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 212 instances were transformed.
+  (CARRY4) => CARRY8: 11 instances
+  FDE => FDRE: 32 instances
+  FDR => FDRE: 1 instance 
+  FDS => FDSE: 5 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 81 instances
+  MULT_AND => LUT2: 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 64 instances
+  RAMB36E1 => RAMB36E2: 16 instances
+
+Synth Design complete, checksum: 5675d159
+INFO: [Common 17-83] Releasing license: Synthesis
+133 Infos, 200 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:35 . Memory (MB): peak = 2833.949 ; gain = 371.316 ; free physical = 33108 ; free virtual = 81521
+INFO: [Common 17-1381] The checkpoint '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/system_ibert_synth_1/system_ibert.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_ibert, cache-ID = 67507de3f2908c29
+INFO: [Coretcl 2-1174] Renamed 840 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/system_ibert_synth_1/system_ibert.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_ibert_utilization_synth.rpt -pb system_ibert_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 20 15:29:25 2023...

@@ -1,0 +1,680 @@
+
+*** Running vivado
+    with args -log gig_eth_pcs_pma_gmii_to_sgmii_bridge.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gig_eth_pcs_pma_gmii_to_sgmii_bridge.tcl
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source gig_eth_pcs_pma_gmii_to_sgmii_bridge.tcl -notrace
+Command: synth_design -top gig_eth_pcs_pma_gmii_to_sgmii_bridge -part xcku040-ffva1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-1540] The version limit for your license is '2022.03' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1702922
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2474.637 ; gain = 0.000 ; free physical = 35195 ; free virtual = 83719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.vhd:176]
+WARNING: [Synth 8-3819] Generic 'GLOBAL_DATE' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'GLOBAL_TIME' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'GLOBAL_VER' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'GLOBAL_SHA' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'TOP_SHA' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'TOP_VER' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'HOG_SHA' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'HOG_VER' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'CON_VER' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'CON_SHA' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'XML_VER' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'XML_SHA' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'ETROC_VER' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'ETROC_SHA' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'ETL_TEST_FW_VER' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'ETL_TEST_FW_SHA' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'CTRL_LIB_VER' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'CTRL_LIB_SHA' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'IPBUS_VER' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'IPBUS_SHA' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'VERILOG_ETHERNET_VER' not present in instantiated entity will be ignored
+WARNING: [Synth 8-3819] Generic 'VERILOG_ETHERNET_SHA' not present in instantiated entity will be ignored
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_support' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_support.vhd:72' bound to instance 'U0' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_support' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_support' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_support.vhd:140]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_block' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:108' bound to instance 'pcs_pma_block_i' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_block' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_support.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_block' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:176]
+	Parameter WAIT_TIME bound to: 24'b010110010110100000100101 
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_wtd_timer' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_wtd_timer.vhd:70' bound to instance 'reset_wtd_timer' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_wtd_timer' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:442]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_wtd_timer' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_wtd_timer.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_wtd_timer' (1#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_wtd_timer.vhd:81]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:67' bound to instance 'sync_block_mmcm_locked' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:470]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:80]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg1' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:113]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg2' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:123]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg3' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:133]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg4' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:143]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg5' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:153]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg6' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block' (2#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:80]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt.vhd:127' bound to instance 'sgmii_logic' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:484]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt.vhd:167]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync.vhd:66' bound to instance 'gen_sync_reset' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync.vhd:79]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync1' to cell 'FDP' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync.vhd:108]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync2' to cell 'FDP' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync.vhd:119]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync3' to cell 'FDP' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync.vhd:130]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync4' to cell 'FDP' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync.vhd:141]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync5' to cell 'FDP' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync.vhd:152]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync6' to cell 'FDP' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync' (3#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync.vhd:79]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:67' bound to instance 'resync_speed_10_100' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block__parameterized1' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:80]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg1' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:113]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg2' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:123]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg3' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:133]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg4' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:143]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg5' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:153]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg6' to cell 'FD' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block__parameterized1' (3#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:80]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:67' bound to instance 'resync_speed_100' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt.vhd:285]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_clk_gen' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_clk_gen.vhd:89' bound to instance 'clock_generation' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_clk_gen' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt.vhd:296]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_clk_gen' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_clk_gen.vhd:103]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_johnson_cntr' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_johnson_cntr.vhd:71' bound to instance 'clk_div_stage1' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_johnson_cntr' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_clk_gen.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_johnson_cntr' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_johnson_cntr.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_johnson_cntr' (4#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_johnson_cntr.vhd:83]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_johnson_cntr' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_johnson_cntr.vhd:71' bound to instance 'clk_div_stage2' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_johnson_cntr' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_clk_gen.vhd:191]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_clk_gen' (5#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_clk_gen.vhd:103]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_tx_rate_adapt' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_tx_rate_adapt.vhd:76' bound to instance 'transmitter' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_tx_rate_adapt' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt.vhd:314]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_tx_rate_adapt' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_tx_rate_adapt.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_tx_rate_adapt' (6#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_tx_rate_adapt.vhd:94]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_rx_rate_adapt' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_rx_rate_adapt.vhd:82' bound to instance 'receiver' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_rx_rate_adapt' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt.vhd:330]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_rx_rate_adapt' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_rx_rate_adapt.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_rx_rate_adapt' (7#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_rx_rate_adapt.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt' (8#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_adapt/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_adapt.vhd:167]
+WARNING: [Synth 8-5640] Port 's_axi_aclk' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_resetn' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_awaddr' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_awvalid' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_awready' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_wdata' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_wvalid' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_wready' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_bresp' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_bvalid' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_bready' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_araddr' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_arvalid' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_arready' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_rdata' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_rresp' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_rvalid' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+WARNING: [Synth 8-5640] Port 's_axi_rready' is missing in component declaration [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:223]
+	Parameter C_ELABORATION_TRANSIENT_DIR bound to: BlankString - type: string 
+	Parameter C_COMPONENT_NAME bound to: gig_eth_pcs_pma_gmii_to_sgmii_bridge - type: string 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter C_IS_SGMII bound to: 1 - type: bool 
+	Parameter C_USE_TRANSCEIVER bound to: 0 - type: bool 
+	Parameter C_HAS_TEMAC bound to: 1 - type: bool 
+	Parameter C_USE_TBI bound to: 0 - type: bool 
+	Parameter C_USE_LVDS bound to: 1 - type: bool 
+	Parameter C_HAS_AN bound to: 1 - type: bool 
+	Parameter C_HAS_MDIO bound to: 1 - type: bool 
+	Parameter C_SGMII_PHY_MODE bound to: 1 - type: bool 
+	Parameter C_DYNAMIC_SWITCHING bound to: 0 - type: bool 
+	Parameter C_SGMII_FABRIC_BUFFER bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'gig_ethernet_pcs_pma_v16_2_4' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/hdl/gig_ethernet_pcs_pma_v16_2_rfs.vhd:18735' bound to instance 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_core' of component 'gig_ethernet_pcs_pma_v16_2_4' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:513]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_lvds_transceiver_ser8' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_lvds_transceiver_ser8.v:61' bound to instance 'lvds_transceiver_mw' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_lvds_transceiver_ser8' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:621]
+INFO: [Synth 8-6157] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_lvds_transceiver_ser8' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_lvds_transceiver_ser8.v:61]
+INFO: [Synth 8-6157] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_1_to_10_ser8' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_1_to_10_ser8.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_delay_controller_wrap' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_delay_controller_wrap.v:59]
+WARNING: [Synth 8-151] case item 7'b1000000 is unreachable [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_delay_controller_wrap.v:395]
+WARNING: [Synth 8-151] case item 7'b1100000 is unreachable [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_delay_controller_wrap.v:395]
+INFO: [Synth 8-6155] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_delay_controller_wrap' (19#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_delay_controller_wrap.v:59]
+INFO: [Synth 8-6157] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_gearbox_4_to_10' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_gearbox_4_to_10.v:58]
+INFO: [Synth 8-6157] synthesizing module 'RAM32X1D' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93195]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32X1D' (20#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93195]
+INFO: [Synth 8-6157] synthesizing module 'RAM32M' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93030]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (21#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93030]
+INFO: [Synth 8-6155] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_gearbox_4_to_10' (22#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_gearbox_4_to_10.v:58]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_DIFF_OUT' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51726]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_DIFF_OUT' (23#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51726]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE3' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53852]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE3' (24#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53852]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE3' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:58654]
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE3' (25#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:58654]
+WARNING: [Synth 8-7071] port 'INTERNAL_DIVCLK' of module 'ISERDESE3' is unconnected for instance 'iserdes_m' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_1_to_10_ser8.v:245]
+WARNING: [Synth 8-7023] instance 'iserdes_m' of module 'ISERDESE3' has 10 connections declared, but only 9 given [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_1_to_10_ser8.v:245]
+WARNING: [Synth 8-7071] port 'INTERNAL_DIVCLK' of module 'ISERDESE3' is unconnected for instance 'iserdes_s' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_1_to_10_ser8.v:286]
+WARNING: [Synth 8-7023] instance 'iserdes_s' of module 'ISERDESE3' has 10 connections declared, but only 9 given [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_1_to_10_ser8.v:286]
+INFO: [Synth 8-6157] synthesizing module 'ODELAYE3' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:69961]
+INFO: [Synth 8-6155] done synthesizing module 'ODELAYE3' (26#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:69961]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE3__parameterized0' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53852]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE3__parameterized0' (26#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53852]
+INFO: [Synth 8-6157] synthesizing module 'ODELAYE3__parameterized0' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:69961]
+INFO: [Synth 8-6155] done synthesizing module 'ODELAYE3__parameterized0' (26#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:69961]
+INFO: [Synth 8-6155] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_1_to_10_ser8' (27#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_1_to_10_ser8.v:56]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_decode_8b10b_lut_base' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_decode_8b10b_lut_base.vhd:99]
+INFO: [Synth 8-226] default block is never used [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_decode_8b10b_lut_base.vhd:307]
+INFO: [Synth 8-226] default block is never used [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_decode_8b10b_lut_base.vhd:425]
+INFO: [Synth 8-226] default block is never used [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_decode_8b10b_lut_base.vhd:693]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_decode_8b10b_lut_base' (28#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_decode_8b10b_lut_base.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_encode_8b10b_lut_base' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_encode_8b10b_lut_base.vhd:91]
+INFO: [Synth 8-226] default block is never used [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_encode_8b10b_lut_base.vhd:183]
+INFO: [Synth 8-226] default block is never used [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_encode_8b10b_lut_base.vhd:286]
+INFO: [Synth 8-226] default block is never used [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_encode_8b10b_lut_base.vhd:332]
+INFO: [Synth 8-226] default block is never used [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_encode_8b10b_lut_base.vhd:390]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_encode_8b10b_lut_base' (29#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_encode_8b10b_lut_base.vhd:91]
+INFO: [Synth 8-6157] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_10_to_1_ser8' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_10_to_1_ser8.v:56]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:66312]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (30#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:66312]
+INFO: [Synth 8-6157] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_gearbox_10_to_4' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_gearbox_10_to_4.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_gearbox_10_to_4' (31#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_gearbox_10_to_4.v:56]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE3' [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:70497]
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE3' (32#1) [/media/data_hdd/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:70497]
+INFO: [Synth 8-6155] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_10_to_1_ser8' (33#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_serdes_10_to_1_ser8.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_lvds_transceiver_ser8' (34#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/sgmii_lvds_transceiver/gig_eth_pcs_pma_gmii_to_sgmii_bridge_lvds_transceiver_ser8.v:61]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_block' (35#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_block.vhd:176]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen.vhd:69' bound to instance 'core_clocking_i' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_support.vhd:302]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen.vhd:83]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'clk625_ibufg' to cell 'IBUFGDS' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen.vhd:120]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 2.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 1.600000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 5.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 2 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: AUTO - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 2 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'mmcme3_adv_inst' to cell 'MMCME3_ADV' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen.vhd:137]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen.vhd:207]
+INFO: [Synth 8-113] binding component instance 'clk625_buf' to cell 'BUFG' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen.vhd:213]
+	Parameter BUFGCE_DIVIDE bound to: 2 - type: integer 
+INFO: [Synth 8-113] binding component instance 'clk312_buf' to cell 'BUFGCE_DIV' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen.vhd:220]
+INFO: [Synth 8-113] binding component instance 'clk125_buf' to cell 'BUFG' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen.vhd:232]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync.vhd:66' bound to instance 'idelayctrl_reset_gen' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_reset_sync' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen.vhd:245]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_idelayctrl' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_idelayctrl.vhd:22' bound to instance 'core_idelayctrl_i' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_idelayctrl' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_idelayctrl' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_idelayctrl.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_idelayctrl' (36#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_idelayctrl.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen' (37#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_clk_gen.vhd:83]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_reset_gen' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_reset_gen.vhd:69' bound to instance 'core_resets_i' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_reset_gen' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_support.vhd:314]
+INFO: [Synth 8-638] synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_reset_gen' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_reset_gen.vhd:79]
+INFO: [Synth 8-3491] module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block' declared at '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block.vhd:67' bound to instance 'sync_block_mmcm_locked' of component 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sync_block' [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_reset_gen.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_reset_gen' (38#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_sgmii_phy_reset_gen.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge_support' (39#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_support.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth_pcs_pma_gmii_to_sgmii_bridge' (40#1) [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.vhd:176]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2526.637 ; gain = 52.000 ; free physical = 35682 ; free virtual = 84207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2544.449 ; gain = 69.812 ; free physical = 35606 ; free virtual = 84130
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2544.449 ; gain = 69.812 ; free physical = 35606 ; free virtual = 84130
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2553.355 ; gain = 0.000 ; free physical = 35579 ; free virtual = 84103
+INFO: [Netlist 29-17] Analyzing 125 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/gig_eth_pcs_pma_gmii_to_sgmii_bridge_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/gig_eth_pcs_pma_gmii_to_sgmii_bridge_board.xdc] for cell 'U0'
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge_clocks.xdc] for cell 'U0'
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gig_eth_pcs_pma_gmii_to_sgmii_bridge_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gig_eth_pcs_pma_gmii_to_sgmii_bridge_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/gig_eth_pcs_pma_gmii_to_sgmii_bridge_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/gig_eth_pcs_pma_gmii_to_sgmii_bridge_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2720.137 ; gain = 0.000 ; free physical = 35514 ; free virtual = 84039
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 121 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+  FD => FDRE: 42 instances
+  FDP => FDPE: 66 instances
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (DIFFINBUF, IBUFCTRL(x2)): 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  SRL16 => SRL16E: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2720.137 ; gain = 0.000 ; free physical = 35514 ; free virtual = 84039
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2720.137 ; gain = 245.500 ; free physical = 35544 ; free virtual = 84069
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2720.137 ; gain = 245.500 ; free physical = 35544 ; free virtual = 84069
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/gig_eth_pcs_pma_gmii_to_sgmii_bridge_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2720.137 ; gain = 245.500 ; free physical = 35544 ; free virtual = 84069
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'MDIO_INTERFACE'
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'SYNCHRONISE'
+INFO: [Synth 8-802] inferred FSM for state register 'USE_ROCKET_IO.TX_RST_SM_reg' in module 'GPCS_PMA_GEN'
+INFO: [Synth 8-802] inferred FSM for state register 'USE_ROCKET_IO.RX_RST_SM_TXOUTCLK.RX_RST_SM_reg' in module 'GPCS_PMA_GEN'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        idle_or_preamble |                      00000010000 |                             0000
+          wait_for_start |                      00001000000 |                             0001
+                opcode_1 |                      00000001000 |                             0010
+                opcode_2 |                      00000000001 |                             0011
+                ld_phyad |                      00000000010 |                             0100
+                ld_regad |                      00000000100 |                             0101
+                    ta_1 |                      10000000000 |                             0110
+                    ta_2 |                      00010000000 |                             0111
+                  data_1 |                      00100000000 |                             1000
+                  data_2 |                      01000000000 |                             1001
+                  data_3 |                      00000100000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'MDIO_INTERFACE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            loss_of_sync |                    0000000000100 |                             0000
+          comma_detect_1 |                    0010000000000 |                             0001
+           aquire_sync_1 |                    0000000010000 |                             0010
+          comma_detect_2 |                    0000000000001 |                             0011
+           aquire_sync_2 |                    0000000000010 |                             0100
+          comma_detect_3 |                    0000000001000 |                             0101
+         sync_acquired_1 |                    1000000000000 |                             0110
+         sync_acquired_2 |                    0001000000000 |                             0111
+        sync_acquired_2a |                    0100000000000 |                             1000
+         sync_acquired_3 |                    0000001000000 |                             1001
+        sync_acquired_3a |                    0000100000000 |                             1010
+         sync_acquired_4 |                    0000010000000 |                             1011
+        sync_acquired_4a |                    0000000100000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'SYNCHRONISE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                  000000000000001 |                             0000
+                 iSTATE6 |                  000000000000010 |                             0001
+                 iSTATE2 |                  000000000000100 |                             0010
+                  iSTATE |                  000000000001000 |                             0011
+                 iSTATE0 |                  000000000010000 |                             0100
+                iSTATE13 |                  000000000100000 |                             0101
+                iSTATE11 |                  000000001000000 |                             0110
+                 iSTATE9 |                  000000010000000 |                             0111
+                iSTATE10 |                  000000100000000 |                             1000
+                 iSTATE8 |                  000001000000000 |                             1001
+                 iSTATE5 |                  000010000000000 |                             1010
+                 iSTATE3 |                  000100000000000 |                             1011
+                 iSTATE4 |                  001000000000000 |                             1100
+                 iSTATE1 |                  010000000000000 |                             1101
+                iSTATE12 |                  100000000000000 |                             1110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'USE_ROCKET_IO.RX_RST_SM_TXOUTCLK.RX_RST_SM_reg' using encoding 'one-hot' in module 'GPCS_PMA_GEN'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                  000000000000001 |                             0000
+                 iSTATE6 |                  000000000000010 |                             0001
+                 iSTATE2 |                  000000000000100 |                             0010
+                  iSTATE |                  000000000001000 |                             0011
+                 iSTATE0 |                  000000000010000 |                             0100
+                iSTATE13 |                  000000000100000 |                             0101
+                iSTATE11 |                  000000001000000 |                             0110
+                 iSTATE9 |                  000000010000000 |                             0111
+                iSTATE10 |                  000000100000000 |                             1000
+                 iSTATE8 |                  000001000000000 |                             1001
+                 iSTATE5 |                  000010000000000 |                             1010
+                 iSTATE3 |                  000100000000000 |                             1011
+                 iSTATE4 |                  001000000000000 |                             1100
+                 iSTATE1 |                  010000000000000 |                             1101
+                iSTATE12 |                  100000000000000 |                             1110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'USE_ROCKET_IO.TX_RST_SM_reg' using encoding 'one-hot' in module 'GPCS_PMA_GEN'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2720.137 ; gain = 245.500 ; free physical = 35635 ; free virtual = 84161
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 10    
++---Registers : 
+	              128 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 10    
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 20    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 268   
++---Muxes : 
+	   3 Input  128 Bit        Muxes := 2     
+	   2 Input  128 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 10    
+	   4 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	  17 Input   16 Bit        Muxes := 1     
+	   5 Input   16 Bit        Muxes := 2     
+	   3 Input   15 Bit        Muxes := 1     
+	  15 Input   15 Bit        Muxes := 2     
+	   3 Input   14 Bit        Muxes := 2     
+	  13 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 18    
+	  11 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 5     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   4 Input    9 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 7     
+	   8 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 9     
+	   2 Input    6 Bit        Muxes := 14    
+	   3 Input    6 Bit        Muxes := 1     
+	  17 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 5     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 33    
+	   4 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 20    
+	  10 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 6     
+	   3 Input    3 Bit        Muxes := 3     
+	   4 Input    3 Bit        Muxes := 1     
+	  15 Input    3 Bit        Muxes := 1     
+	  16 Input    3 Bit        Muxes := 1     
+	  64 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 7     
+	  12 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 132   
+	   4 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 10    
+	  10 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 2     
+	  15 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 23    
+	   9 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 5     
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2720.137 ; gain = 245.500 ; free physical = 35649 ; free virtual = 84198
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------------------------------------------------+-----------------------------------------------------+---------------+----------------+
+|Module Name                                                | RTL Object                                          | Depth x Width | Implemented As | 
++-----------------------------------------------------------+-----------------------------------------------------+---------------+----------------+
+|gig_eth_pcs_pma_gmii_to_sgmii_bridge_decode_8b10b_lut_base | b5                                                  | 64x5          | LUT            | 
+|gig_eth_pcs_pma_gmii_to_sgmii_bridge_support               | pcs_pma_block_i/lvds_transceiver_mw/decode_8b10b/b5 | 64x5          | LUT            | 
++-----------------------------------------------------------+-----------------------------------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 16 of /home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.xdc. [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.xdc:16]
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 17 of /home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.xdc. [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.xdc:17]
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 18 of /home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.xdc. [/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/ip/gig_eth_pcs_pma_gmii_to_sgmii_bridge/synth/gig_eth_pcs_pma_gmii_to_sgmii_bridge.xdc:18]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2720.137 ; gain = 245.500 ; free physical = 36676 ; free virtual = 85211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2730.059 ; gain = 255.422 ; free physical = 36670 ; free virtual = 85205
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2746.074 ; gain = 271.438 ; free physical = 36660 ; free virtual = 85195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2746.074 ; gain = 271.438 ; free physical = 36647 ; free virtual = 85182
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2746.074 ; gain = 271.438 ; free physical = 36647 ; free virtual = 85182
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2746.074 ; gain = 271.438 ; free physical = 36644 ; free virtual = 85180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2746.074 ; gain = 271.438 ; free physical = 36644 ; free virtual = 85180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2746.074 ; gain = 271.438 ; free physical = 36645 ; free virtual = 85181
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2746.074 ; gain = 271.438 ; free physical = 36645 ; free virtual = 85181
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                  | RTL Name                                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|gig_ethernet_pcs_pma_v16_2_4 | gpcs_pma_inst/RX_GMII_AT_TXOUTCLK.RECEIVER_TXOUTCLK/RXDATA_REG5_reg[7] | 5      | 8     | NO           | NO                 | NO                | 8      | 0       | 
++-----------------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     3|
+|2     |BUFGCE_DIV      |     1|
+|3     |CARRY8          |     8|
+|4     |IDELAYE3        |     3|
+|6     |ISERDESE3       |     2|
+|7     |LUT1            |    29|
+|8     |LUT2            |    87|
+|9     |LUT3            |   147|
+|10    |LUT4            |   166|
+|11    |LUT5            |   129|
+|12    |LUT6            |   247|
+|13    |MMCME3_ADV      |     1|
+|14    |MUXF7           |     1|
+|15    |ODELAYE3        |     1|
+|16    |OSERDESE3       |     1|
+|17    |RAM32M          |     4|
+|18    |SRL16           |     2|
+|19    |SRL16E          |     8|
+|20    |FD              |    42|
+|21    |FDP             |    60|
+|22    |FDPE            |    10|
+|23    |FDRE            |   689|
+|24    |FDSE            |    41|
+|25    |IBUFDS_DIFF_OUT |     1|
+|26    |IBUFGDS         |     1|
+|27    |OBUFDS          |     1|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2746.074 ; gain = 271.438 ; free physical = 36645 ; free virtual = 85181
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2746.074 ; gain = 95.750 ; free physical = 36657 ; free virtual = 85193
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2746.082 ; gain = 271.438 ; free physical = 36657 ; free virtual = 85193
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2746.082 ; gain = 0.000 ; free physical = 36747 ; free virtual = 85283
+INFO: [Netlist 29-17] Analyzing 127 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2808.809 ; gain = 0.000 ; free physical = 36697 ; free virtual = 85233
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 114 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+  FD => FDRE: 42 instances
+  FDP => FDPE: 60 instances
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (DIFFINBUF, IBUFCTRL(x2)): 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  SRL16 => SRL16E: 2 instances
+
+Synth Design complete, checksum: a3864412
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 2808.809 ; gain = 342.176 ; free physical = 36833 ; free virtual = 85369
+INFO: [Common 17-1381] The checkpoint '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/gig_eth_pcs_pma_gmii_to_sgmii_bridge_synth_1/gig_eth_pcs_pma_gmii_to_sgmii_bridge.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP gig_eth_pcs_pma_gmii_to_sgmii_bridge, cache-ID = 73aedb5df29d2d9b
+INFO: [Coretcl 2-1174] Renamed 14 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/gitlab-runner/builds/q6jzMzCh/0/cms-etl-electronics/module_test_fw/Projects/etl_test_fw/etl_test_fw.runs/gig_eth_pcs_pma_gmii_to_sgmii_bridge_synth_1/gig_eth_pcs_pma_gmii_to_sgmii_bridge.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file gig_eth_pcs_pma_gmii_to_sgmii_bridge_utilization_synth.rpt -pb gig_eth_pcs_pma_gmii_to_sgmii_bridge_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 20 15:31:01 2023...
