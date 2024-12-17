@@ -23,7 +23,7 @@ FPGA 펌웨어 및 테스트 소프트웨어
 etl_test_fw-v3.2.0
 Tamalero SW (module_test_sw)
 
-사용 방법 (개발중)
+사용 방법
 -------------
 ### 클론 및 환경설정
 ```
@@ -33,9 +33,10 @@ source setup.sh
 ```
 ### 오실로스코프 통신 테스트
 ```
-python oscilloscope_control_v0_1.py
+cd OscilloscopeControl
+python oscilloscope_control_v0_3.py
 ```
-### Readout board turn on
+### Readout board turn on (On debugging)
 ```
 ipython3 test_tamalero.py -- --kcu 192.168.0.10 --verbose --configuration modulev0b --power_up
 ```
