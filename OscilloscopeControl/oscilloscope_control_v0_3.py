@@ -18,7 +18,7 @@ def __target__():
 
 # Argument parser
 parser = argparse.ArgumentParser(description='Oscilloscope control')
-parser.add_argument('--nEvents', type=int, default=100, help='Number of events to acquire')
+parser.add_argument('--nEvents', type=int, default=10, help='Number of events to acquire')
 args = parser.parse_args()
 
 # Start time
@@ -28,7 +28,7 @@ start_time = time.time()
 resource_name = 'TCPIP::192.168.0.2::INSTR' ## 내부망 IP 주소 (사전 정의됨. 바꾸지 마시오.)
 horizontalwindow = 1e-8 ## 10 ns
 trigger_channel = 2 
-trigger_level = -0.01  # V
+trigger_level = -0.15  # V -0.15 for real signal
 
 class Tektronix:
     def __init__(self, resource_name):
@@ -63,9 +63,6 @@ class Tektronix:
                 for ch in range(1, 5):
                     x, y = self.readChannel(ch)
                     data[f'ch{ch}'] = y
-                    if ch == 1:
-                        time = x
-                        f['Events'] 
                     if ch == 1:
                         data['time'] = x
 

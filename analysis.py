@@ -1,7 +1,7 @@
 import uproot
 import numpy as np
 
-f = uproot.open('waveforms.root')
+f = uproot.open('/home/knutimingdaq01/Desktop/KNUSystemTestStand/OscilloscopeControl/output/waveforms_merged.root')
 
 tr = f['Events']
 time = tr['time'].array()
