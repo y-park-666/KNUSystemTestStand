@@ -34,7 +34,7 @@ source setup.sh
 ### 오실로스코프 통신 테스트
 ```
 cd OscilloscopeControl
-python oscilloscope_control_v0_3.py
+python oscilloscope_control_v0_5.py --nEvents 1000 
 ```
 ### Readout board turn on (On debugging)
 ```

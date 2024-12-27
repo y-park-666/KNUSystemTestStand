@@ -86,6 +86,9 @@ class Tektronix:
 # Argument parser
 parser = argparse.ArgumentParser(description='Oscilloscope control')
 parser.add_argument('--nEvents', type=int, default=10, help='Number of events to acquire')
+parser.add_argument('--horizontalwindow', type=float, default=1e-8, help='Horizontal window')
+parser.add_argument('--trigger_channel', type=int, default=2, help='Trigger channel')
+parser.add_argument('--trigger_level', type=float, default=-0.15, help='Trigger level')
 args = parser.parse_args()
 
 # Start time
@@ -93,9 +96,9 @@ start_time = time.time()
 
 # default settings
 resource_name = 'TCPIP::192.168.0.2::INSTR' ## 내부망 IP 주소 (사전 정의됨. 바꾸지 마시오.)
-horizontalwindow = 1e-8 ## 10 ns
-trigger_channel = 2 
-trigger_level = -0.15  # V -0.15 for real signal
+horizontalwindow = args.horizontalwindow
+trigger_channel = args.trigger_channel
+trigger_level = args.trigger_level
 
 if __name__ == '__main__':
     print(f'Version: {__version__()}')
@@ -109,7 +112,6 @@ if __name__ == '__main__':
     scope.mergingROOT()
 
     # End time
-    artwork.printArtwork()
     print('File saved on "output/" directory')
     end_time = time.time()
     print(f'Elapsed time: {end_time - start_time:.2f} sec')
