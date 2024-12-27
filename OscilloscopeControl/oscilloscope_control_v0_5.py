@@ -83,8 +83,6 @@ class Tektronix:
         x_data = x_origin + np.arange(len(y_data)) * x_increment - (len(y_data) * x_increment) / 2
         return x_data, y_data
 
-
-
 # Argument parser
 parser = argparse.ArgumentParser(description='Oscilloscope control')
 parser.add_argument('--nEvents', type=int, default=10, help='Number of events to acquire')
@@ -111,6 +109,8 @@ if __name__ == '__main__':
     scope.mergingROOT()
 
     # End time
+    artwork.printArtwork()
+    print('File saved on "output/" directory')
     end_time = time.time()
     print(f'Elapsed time: {end_time - start_time:.2f} sec')
     exit()
